@@ -3,8 +3,7 @@
     Ethan Holand
     5/25/2022
 '''
-from re import T
-import matplotlib.pyplot as plt # For general plotting
+import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import multivariate_normal # MVN not univariate
 from sklearn.metrics import confusion_matrix
@@ -40,10 +39,9 @@ Sigma = np.array([[[1, -0.5, 0.3],
                    [0.3, 1, 0.3],
                    [-0.2, 0.3, 1]]]) # Gaussian distributions covariance matrices
 
-# Determine dimensionality from mixture PDF parameters
-n = mu.shape[1]
+n = mu.shape[1] # Determine dimensionality from mixture PDF parameters
 C = len(priors)
-u = np.random.rand(N)
+u = np.random.rand(N) #string of N randomly generated variables, from 0 to 1
 
 # Output samples and labels
 X = np.zeros([N, n])
@@ -51,6 +49,7 @@ labels = np.zeros(N) # KEEP TRACK OF THIS
 
 # Plot for original data and their true labels
 fig = plt.figure(figsize=(10, 10))
+ax = fig.add_subplot(projection='3d')
 marker_shapes = 'd+.'
 marker_colors = 'rbg' 
 
@@ -58,17 +57,21 @@ L = np.array(range(1, C+1))
 for l in L:
     # Get randomly sampled indices for this component
     indices = np.argwhere((thresholds[l-1] <= u) & (u <= thresholds[l]))[:, 0]
+
     # No. of samples in this component
     Nl = len(indices)  
     labels[indices] = l * np.ones(Nl)
     X[indices, :] =  multivariate_normal.rvs(mu[l-1], Sigma[l-1], Nl)
-    plt.plot(X[labels==l, 0], X[labels==l, 1], marker_shapes[l-1] + marker_colors[l-1], label="True Class {}".format(l))
+    plt.plot(X[labels==l, 0], X[labels==l, 1], X[labels==l, 2], marker_shapes[l-1] + marker_colors[l-1], label="Class {}".format(l-1))
 
-    
 # Plot the original data and their true labels
 plt.legend()
-plt.xlabel(r"$x_1$")
-plt.ylabel(r"$x_2$")
+ax.set_xlabel(r"x-axis")
+ax.set_ylabel(r"y-axis")
+ax.set_zlabel(r"z-axis")
 plt.title("Generated Original Data Samples")
 plt.tight_layout()
 plt.show()
+
+
+## PART A: ERM CLASSIFICATION USING THE KNOWLEDGE OF TRUE DATA PDF:
