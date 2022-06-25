@@ -1,0 +1,107 @@
+Unmodified set
+10 Epochs
+280x280 images
+
+
+Epoch 1
+-------------------------------
+loss: 3.337905  [    0/ 2996]
+loss: 1.666041  [  640/ 2996]
+loss: 1.525396  [ 1280/ 2996]
+loss: 1.338090  [ 1920/ 2996]
+loss: 1.561927  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 62.5%, Avg loss: 1.665067 
+
+Epoch 2
+-------------------------------
+loss: 1.313765  [    0/ 2996]
+loss: 1.554286  [  640/ 2996]
+loss: 1.262057  [ 1280/ 2996]
+loss: 1.619404  [ 1920/ 2996]
+loss: 1.439948  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 62.8%, Avg loss: 1.371327 
+
+Epoch 3
+-------------------------------
+loss: 1.618893  [    0/ 2996]
+loss: 1.279086  [  640/ 2996]
+loss: 1.149457  [ 1280/ 2996]
+loss: 1.167666  [ 1920/ 2996]
+loss: 0.719214  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 68.5%, Avg loss: 1.177149 
+
+Epoch 4
+-------------------------------
+loss: 1.246243  [    0/ 2996]
+loss: 1.246122  [  640/ 2996]
+loss: 1.124498  [ 1280/ 2996]
+loss: 1.360955  [ 1920/ 2996]
+loss: 1.030712  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 69.7%, Avg loss: 1.147350 
+
+Epoch 5
+-------------------------------
+loss: 0.761326  [    0/ 2996]
+loss: 0.833342  [  640/ 2996]
+loss: 0.827536  [ 1280/ 2996]
+loss: 1.297067  [ 1920/ 2996]
+loss: 1.084290  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 70.1%, Avg loss: 1.057571 
+
+Epoch 6
+-------------------------------
+loss: 1.163846  [    0/ 2996]
+loss: 0.965324  [  640/ 2996]
+loss: 0.816451  [ 1280/ 2996]
+loss: 0.928466  [ 1920/ 2996]
+loss: 0.881112  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 70.7%, Avg loss: 0.971654 
+
+Epoch 7
+-------------------------------
+loss: 1.102980  [    0/ 2996]
+loss: 1.042918  [  640/ 2996]
+loss: 1.001207  [ 1280/ 2996]
+loss: 1.009180  [ 1920/ 2996]
+loss: 0.929612  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 49.3%, Avg loss: 1.341370 
+
+Epoch 8
+-------------------------------
+loss: 1.102051  [    0/ 2996]
+loss: 2.415097  [  640/ 2996]
+loss: 1.486165  [ 1280/ 2996]
+loss: 1.714875  [ 1920/ 2996]
+loss: 1.388299  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 70.5%, Avg loss: 1.170916 
+
+Epoch 9
+-------------------------------
+loss: 0.945593  [    0/ 2996]
+loss: 0.902853  [  640/ 2996]
+loss: 0.955088  [ 1280/ 2996]
+loss: 1.100278  [ 1920/ 2996]
+loss: 1.202609  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 71.7%, Avg loss: 1.113633 
+
+Epoch 10
+-------------------------------
+loss: 1.357614  [    0/ 2996]
+loss: 0.986379  [  640/ 2996]
+loss: 1.257375  [ 1280/ 2996]
+loss: 1.016308  [ 1920/ 2996]
+loss: 0.948601  [ 2560/ 2996]
+Test Error: 
+ Accuracy: 70.8%, Avg loss: 1.009687 
+
+GroundTruth:  ground ground ground ground inlet ground ground ground ground mastcam ground ground ground ground ground ground ground drt side ground ground ground ground ground ground horizon ground ground ground ground ground ground ground horizon ground ground ground mahli cal target ground ground rover rear deck scoop ground scoop ground drill scoop chemin inlet open ground ground ground ground ground ground rover rear deck turret rover rear deck ground mahli ground ground ground ground ground ground
+Predicted:    ground ground ground ground inlet ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground ground inlet ground inlet horizon turret ground inlet ground inlet ground inlet ground ground ground ground ground ground ground turret ground ground inlet ground ground ground ground ground ground
