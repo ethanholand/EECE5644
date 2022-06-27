@@ -1,3 +1,8 @@
+This is Ethan Holand and Jarrod Homer's final project for EECE5644. The proper notebook to generate results is finalNotebook.ipynb.
+
+----------------------------------------------------
+The dataset:
+
 Mars surface image (Curiosity rover) labeled data set
 -----------------------------------------------------
 Authors: Alice Stanboli and Kiri L. Wagstaff
